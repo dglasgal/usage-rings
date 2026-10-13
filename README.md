@@ -50,6 +50,17 @@ To change the seat price, the alert thresholds, fun mode or the sound later: `/p
 
 Using Claude Skins too? Type `/skin band off` so its usage band does not sit next to this one. Skins' themes stay on.
 
+## Updating
+
+When a new version is out, in a normal terminal:
+
+```
+claude plugin marketplace update 7ate9-mods
+claude plugin update usage-rings@7ate9-mods
+```
+
+Then start a new Claude Code session.
+
 ## Commands
 
 - `/rings` opens the panel.
