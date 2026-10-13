@@ -1,0 +1,6 @@
+{
+  "name": "7ate9-mods",
+  "owner": { "name": "7ATE9 Entertainment" },
+  "description": "Claude Code mods made at 7ATE9.",
+  "plugins": [{ "name": "usage-rings", "source": "./" }]
+}

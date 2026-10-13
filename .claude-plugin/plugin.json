@@ -1,0 +1,65 @@
+{
+  "name": "usage-rings",
+  "version": "0.2.1",
+  "description": "Claude plan usage rings with reset times, what your Claude Code and Cowork usage would cost at API prices, a leaderboard of your most expensive sessions, spend alerts, and fire-and-money graphics.",
+  "author": {
+    "name": "7ATE9 Entertainment"
+  },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "seatPrice": {
+      "type": "number",
+      "title": "Seat price (US$ per month)",
+      "description": "What your Claude seat costs a month, to compare against what your usage would cost at API prices. 0 leaves the comparison out.",
+      "default": 0
+    },
+    "sessionWarn": {
+      "type": "number",
+      "title": "Alert: session passes (US$)",
+      "description": "First alert when one session's cost at API prices passes this. 0 turns it off.",
+      "default": 25
+    },
+    "sessionHot": {
+      "type": "number",
+      "title": "Alert: session hot (US$)",
+      "description": "Second alert, with a Mac notification, when one session passes this.",
+      "default": 50
+    },
+    "sessionFire": {
+      "type": "number",
+      "title": "Alert: session on fire (US$)",
+      "description": "Third alert, with a Mac notification and full fire, when one session passes this.",
+      "default": 100
+    },
+    "turnAlert": {
+      "type": "number",
+      "title": "Alert: one reply costs more than (US$)",
+      "description": "Alert when a single reply costs more than this at API prices. 0 turns it off.",
+      "default": 5
+    },
+    "burnAlert": {
+      "type": "number",
+      "title": "Alert: spending per hour over (US$)",
+      "description": "Alert when this session spends more than this within an hour. 0 turns it off.",
+      "default": 50
+    },
+    "ringAlert": {
+      "type": "number",
+      "title": "Alert: plan limit passes (%)",
+      "description": "Alert when the 5-hour or weekly limit passes this percent (and again at 95%). 0 turns it off.",
+      "default": 80
+    },
+    "funMode": {
+      "type": "boolean",
+      "title": "Fun mode",
+      "description": "Animated fire, a ticking money counter and falling money when a session passes a milestone.",
+      "default": true
+    },
+    "sound": {
+      "type": "boolean",
+      "title": "Cha-ching sound",
+      "description": "Play a cash-register sound when a session passes a milestone (macOS).",
+      "default": true
+    }
+  }
+}
