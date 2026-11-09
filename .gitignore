@@ -2,3 +2,7 @@
 .claude-plugin/types/
 tsconfig.json
 .DS_Store
+
+# Claude Code per-machine approvals ("don't ask again") can hold passwords - never upload
+.claude/settings.local.json
+.claude/*.local.json
